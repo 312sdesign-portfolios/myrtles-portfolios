@@ -1,0 +1,16 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Image Editor / Other Common Temp Files
+*.psd
+*.ai
+*.xcf
+*.tmp
+*.bak
+*.old
+
+# Add any other specific files or folders you want Git to IGNORE here.
+# For example, if you have a "drafts" folder you don't want uploaded:
+# drafts/ 
