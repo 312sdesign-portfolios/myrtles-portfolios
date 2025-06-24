@@ -1,15 +1,97 @@
+####################################
 # Operating System Files
-.DS_Store
+####################################
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trash-*
+__MACOSX/
 
-# Image Editor / Other Common Temp Files
+####################################
+# Editor Artifacts
+####################################
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+####################################
+# Image Editor / Temp Working Files
+####################################
 *.psd
-*.ai
 *.xcf
 *.tmp
+*.temp
 *.bak
+*.swp
+*._backup
+*.autosave
+*.lock
+*.cache
+*.log
+*.session
+*.ai
 *.old
+
+####################################
+# Node / Package Managers / Dependencies
+####################################
+node_modules/
+bower_components/
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+####################################
+# Build Artifacts / Output
+####################################
+dist/
+build/
+out/
+coverage/
+*.o
+*.obj
+*.dll
+*.exe
+*.class
+
+####################################
+# Environment / Credentials / Secrets
+####################################
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+secrets/
+credentials.json
+apikeys.json
+
+####################################
+# Git Metadata / Patch Backups
+####################################
+*.orig
+*.rej
+*.patch
+*.diff
+
+####################################
+# Personal, Draft, or Miscellaneous
+####################################
+drafts/
+*.old
+*.save
+*.backup
+notes/
+*.DS_Store
+temp/
+localdev/
 
 # Add any other specific files or folders you want Git to IGNORE here.
 # For example, if you have a "drafts" folder you don't want uploaded:
