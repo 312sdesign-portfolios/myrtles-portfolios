@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // ******************************************************
         // IMPORTANT: CHANGE THIS PASSWORD FOR EACH CLIENT!
         // ******************************************************
-        const correctPassword = "*******"; // <--- CHANGE THIS TEXT!
+        const correctPassword = "Batty"; // <--- CHANGE THIS TEXT!
 
         function checkPassword() {
             const enteredPassword = document.getElementById('passwordInput').value;
