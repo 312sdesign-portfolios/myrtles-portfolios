@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myrtle's Photo Gallery by 312sDesign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Myrtle's Photo Gallery</h1>
+            <p>High-resolution photos prepared exclusively for Myrtle by 312sDesign. Download individual images or get them all at once!</p>
+            </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Your Photo Collection</h2>
+                <a href="./[ClientRepoName].zip" download class="download-all-button">Download All Photos (ZIP)</a>
+                <p style="text-align: center; margin-top: 10px; font-style: italic;">(To download all photos, click the button above. Ensure the zip file is available.)</p>
+
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="[your-photo-file-name-1.jpg]" alt="[Description of Photo 1]">
+                        <div class="photo-info">
+                            <h3>[Photo Title/Description 1]</h3>
+                            <a href="[your-photo-file-name-1.jpg]" download class="download-button">Download Photo</a>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="[your-photo-file-name-2.jpg]" alt="[Description of Photo 2]">
+                        <div class="photo-info">
+                            <h3>[Photo Title/Description 2]</h3>
+                            <a href="[your-photo-file-name-2.jpg]" download class="download-button">Download Photo</a>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> 312sDesign. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
