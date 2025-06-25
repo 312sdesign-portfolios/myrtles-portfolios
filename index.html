@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myrtle's Portfolio Gallery by 312sDesign</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myrtle's Portfolio Gallery by 312sDesign</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="login-wrapper">
+  <div id="login-wrapper">
     <div id="login-form" class="login-container">
-        <h2>Client Portfolio Login</h2>
-        <p>Please enter your password to view the portfolio.</p>
-        <input type="password" id="passwordInput" placeholder="Enter password">
-        <button onclick="checkPassword()">Access Portfolio</button>
-        <p id="errorMessage" style="color: red;"></p>
+      <h2>Client Portfolio Login</h2>
+      <p>Please enter your password to view the portfolio.</p>
+      <input type="password" id="passwordInput" placeholder="Enter password" />
+      <button onclick="checkPassword()">Access Portfolio</button>
+      <p id="errorMessage" style="color: red;"></p>
     </div>
-    </div>
-        <div id="portfolio-content">
-        <header class="container">
-            <h1>Myrtle's Photo Gallery</h1>
-            <p>High-resolution photos prepared exclusively for Myrtle by 312sDesign. Download individual images or get them all at once!</p>
-        </header>
-        <main>
-            <div class="container">
-                <section>
-                    <h2>Your Photo Collection</h2>
-                    <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/myrtles-real-estate-photos.zip" download class="download-all-button">Download All Photos (ZIP)</a>
-                    <p style="text-align: center; margin-top: 10px; font-style: italic;">(To download all photos, click the button above. Ensure the zip file is available.)</p>
-                    <div class="photo-grid">
-                        <div class="photo-item">
-                            <img src="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/spacious-kitchen.jpeg" alt="Bright, spacious kitchen with an island and modern appliances.">
-                            <div class="photo-info">
-                                <h3>Modern Kitchen Design</h3>
-                                <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/spacious-kitchen.jpeg" download class="download-button">Download Photo</a>
-                            </div>
-                        </div>
-                        <div class="photo-item">
-                            <img src="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/master-bedroom.jpg" alt="Cozy master bedroom with a large window.">
-                            <div class="photo-info">
-                                <h3>Inviting Master Bedroom</h3>
-                                <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/master-bedroom.jpg" download class="download-button">Download Photo</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+  </div>
+
+  <div id="portfolio-content">
+    <header class="container">
+      <h1>Myrtle's Photo Gallery</h1>
+      <p>High-resolution photos prepared exclusively for Myrtle by 312sDesign. Download individual images or get them all at once!</p>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <h2>Your Photo Collection</h2>
+          <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/myrtles-real-estate-photos.zip" download class="download-all-button">Download All Photos (ZIP)</a>
+          <p style="text-align: center; margin-top: 10px; font-style: italic;">(To download all photos, click the button above. Ensure the zip file is available.)</p>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/spacious-kitchen.jpeg" alt="Bright, spacious kitchen with an island and modern appliances." />
+              <div class="photo-info">
+                <h3>Modern Kitchen Design</h3>
+                <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/spacious-kitchen.jpeg" download class="download-button">Download Photo</a>
+              </div>
             </div>
-        </main>
-        <footer>
-            <div class="container">
-                <p>&copy; <span id="currentYear"></span> 312sDesign. All rights reserved.</p>
+            <div class="photo-item">
+              <img src="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/master-bedroom.jpg" alt="Cozy master bedroom with a large window." />
+              <div class="photo-info">
+                <h3>Inviting Master Bedroom</h3>
+                <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/master-bedroom.jpg" download class="download-button">Download Photo</a>
+              </div>
             </div>
-        </footer>
-    </div>
-    <script src="script.js"></script>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> 312sDesign. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
