@@ -2,57 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Myrtle's Portfolio Gallery by 312sDesign</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myrtle’s Portfolio</title>
+
+  <!-- Font Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300..900&family=Indie+Flower&family=Montserrat&family=Raleway&family=Roboto&family=Verdana&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="login-wrapper">
-    <div id="login-form" class="login-container">
-      <h2>Client Portfolio Login</h2>
-      <p>Please enter your password to view the portfolio.</p>
-      <input type="password" id="passwordInput" placeholder="Enter password" />
-      <button onclick="checkPassword()">Access Portfolio</button>
-      <p id="errorMessage" style="color: red;"></p>
-    </div>
+
+  <!-- Password Screen -->
+  <div id="password-gate" class="login-wrapper">
+    <h1>Myrtle’s Gallery</h1>
+    <form id="login-form">
+      <input type="password" id="password" placeholder="Enter password" required />
+      <button type="submit">Enter</button>
+    </form>
+    <p class="login-note">Access required to view this private collection.</p>
   </div>
 
-  <div id="portfolio-content">
-    <header class="container">
-      <h1>Myrtle's Photo Gallery</h1>
-      <p>High-resolution photos prepared exclusively for Myrtle by 312sDesign. Download individual images or get them all at once!</p>
+  <!-- Hidden Gallery (Revealed After Login) -->
+  <div id="protected-content" style="display: none;">
+
+    <header>
+      <h1 class="gallery-title">Myrtle’s Gallery</h1>
+      <p class="gallery-subtitle">High-resolution photos prepared exclusively for Myrtle by 312sDesign. Download individual images or download them all at once!</p>
     </header>
+
     <main>
-      <div class="container">
-        <section>
-          <h2>Your Photo Collection</h2>
-          <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/myrtles-real-estate-photos.zip" download class="download-all-button">Download All Photos (ZIP)</a>
-          <p style="text-align: center; margin-top: 10px; font-style: italic;">(To download all photos, click the button above. Ensure the zip file is available.)</p>
-          <div class="photo-grid">
-            <div class="photo-item">
-              <img src="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/spacious-kitchen.jpeg" alt="Bright, spacious kitchen with an island and modern appliances." />
-              <div class="photo-info">
-                <h3>Modern Kitchen Design</h3>
-                <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/spacious-kitchen.jpeg" download class="download-button">Download Photo</a>
-              </div>
-            </div>
-            <div class="photo-item">
-              <img src="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/master-bedroom.jpg" alt="Cozy master bedroom with a large window." />
-              <div class="photo-info">
-                <h3>Inviting Master Bedroom</h3>
-                <a href="https://github.com/312sdesign-portfolios/myrtles-portfolios/raw/main/images/master-bedroom.jpg" download class="download-button">Download Photo</a>
-              </div>
-            </div>
-          </div>
-        </section>
+      <section class="photo-grid">
+        <figure>
+          <img src="assets/image1.jpg" alt="Modern Kitchen Design">
+          <figcaption>Modern Kitchen Design</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/image2.jpg" alt="Inviting Master Bedroom">
+          <figcaption>Inviting Master Bedroom</figcaption>
+        </figure>
+        <!-- 🔁 Add more photos here using the <figure> block -->
+      </section>
+
+      <div class="download-buttons">
+        <button onclick="downloadZip()">Download All Photos (ZIP)</button>
       </div>
     </main>
+
     <footer>
-      <div class="container">
-        <p>&copy; <span id="currentYear"></span> 312sDesign. All rights reserved.</p>
-      </div>
+      <p>© 2025 312sDesign | Derek Jones</p>
+      <p>Email: <a href="mailto:virtualtours312@outlook.com">virtualtours312@outlook.com</a> | (501) 500-2990</p>
     </footer>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
