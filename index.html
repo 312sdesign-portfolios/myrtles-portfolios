@@ -8,7 +8,67 @@
   <!-- Font Optimization -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="ht<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myrtle’s Portfolio</title>
+
+  <!-- Font Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300..900&family=Indie+Flower&family=Montserrat&family=Raleway&family=Roboto&family=Verdana&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Password Screen -->
+  <div id="login-wrapper" class="login-wrapper">
+    <h1>Myrtle’s Gallery</h1>
+    <form id="login-form" onsubmit="event.preventDefault(); checkPassword();">
+      <input type="password" id="passwordInput" placeholder="Enter password" required />
+      <button type="submit">Enter</button>
+      <p id="errorMessage" class="login-note"></p>
+    </form>
+    <p class="login-note">Access required to view this private collection.</p>
+  </div>
+
+  <!-- Hidden Gallery (Revealed After Login) -->
+  <div id="portfolio-content" style="display: none;">
+
+    <header>
+      <h1 class="gallery-title">Myrtle’s Gallery</h1>
+      <p class="gallery-subtitle">High-resolution photos prepared exclusively for Myrtle by 312sDesign. Download individual images or download them all at once!</p>
+    </header>
+
+    <main>
+      <section class="photo-grid">
+        <!-- 30 image placeholders -->
+        ${[...Array(30)].map((_, i) => `
+          <figure>
+            <img src="assets/image${i + 1}.jpg" alt="Photo ${i + 1}">
+            <figcaption>Photo ${i + 1}</figcaption>
+          </figure>`).join('')}
+      </section>
+
+      <div class="download-buttons">
+        <button onclick="downloadZip()">Download All Photos (ZIP)</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 312sDesign | Derek Jones</p>
+      <p>Email: <a href="mailto:virtualtours312@outlook.com">virtualtours312@outlook.com</a> | (501) 500-2990</p>
+      <p>&copy; <span id="currentYear"></span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+tps://fonts.googleapis.com/css2?family=Inconsolata:wght@300..900&family=Indie+Flower&family=Montserrat&family=Raleway&family=Roboto&family=Verdana&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
