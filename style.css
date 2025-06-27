@@ -98,7 +98,6 @@ footer a {
   text-decoration: none;
 }
 
-/* Login Styles */
 .login-wrapper {
   max-width: 400px;
   margin: 100px auto;
@@ -115,7 +114,7 @@ footer a {
   margin-bottom: 1rem;
 }
 
-#password {
+#passwordInput {
   padding: 0.5rem;
   width: 80%;
   font-size: 1rem;
